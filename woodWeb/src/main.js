@@ -8,7 +8,7 @@ global.jQuery = jQuery
 global.$ = jQuery
 let Bootstrap = require('bootstrap')
 import 'bootstrap/dist/css/bootstrap.css'
-
+import BootstrapVue from 'bootstrap-vue'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -16,5 +16,9 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  }
 })
+
+Vue.use(BootstrapVue)
